@@ -1,0 +1,7 @@
+<!-- templates/ClienteNuevo_form.html -->
+<h1>Add ClienteNuevo</h1>
+<form method="post" action="{% url 'cliente_nuevo_add' %}">
+    {% csrf_token %}
+    {{ form.as_p }}
+    <button type="submit">Save</button>
+</form>

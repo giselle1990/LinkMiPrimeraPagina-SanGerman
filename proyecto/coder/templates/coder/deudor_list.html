@@ -1,0 +1,17 @@
+{% extends "coder/base.thml" %}
+
+{% block contenido %}
+
+{% for deudor in deudores  %}
+    <ul>
+        <li>
+            {{deudor.nombre}}
+            {{deudor.deuda}}
+            {{deudor.detalle_deuda}}
+            <li>
+        
+        <ul>
+
+{% endfor %}
+
+{% endblock contenido %}

@@ -1,0 +1,7 @@
+<!-- templates/ClienteNuevo_list.html -->
+<h1>ClienteNuevo List</h1>
+<ul>
+    {% for cliente in clientes %}
+        <li>{{ cliente.nombre }} - {{ cliente.email }} - {{ cliente.telefono }}</li>
+    {% endfor %}
+</ul>
